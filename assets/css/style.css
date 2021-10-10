@@ -1,0 +1,108 @@
+
+.anmipes-woocommerce-product-gallery {
+	position: relative;
+}
+
+.anmipes-woocommerce-product-gallery .video-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+}
+
+.anmipes-woocommerce-product-gallery .video-icon a {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    padding-left: 4px;
+    border: 2px solid #47bac1;
+    border-radius: 50%;
+    color: #47bac1;
+    display: inline-block;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.anmipes-woocommerce-product-gallery:hover .video-icon a {
+    border-color: #fff;
+    color: #fff;
+}
+
+.anmipes-single-gallery-img {
+    overflow: hidden;
+    position: relative;
+}
+
+.anmipes-single-gallery-img img {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.anmipes-product-big-image:hover .anmipes-single-gallery-img img {
+    transform: scale(1.2);
+}
+
+a.product-popup {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    background: rgba(71,186,193,.8);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 99;
+}
+
+.anmipes-woocommerce-product-gallery .video-icon:hover a.product-popup, 
+.anmipes-single-gallery-img:hover a.product-popup {
+    opacity: 1;
+}
+
+.hover-icon {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hover-icon i {
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    color: #fff;
+}
+
+.anmipes-thumb_imges {
+    opacity: 0.8;
+    height: 100px;
+}
+
+.anmipes-single-gallery-thumb {
+    padding: 0 5px;
+    /*margin-left: 2px;*/
+}
+
+.anmipes-single-gallery-thumb.active:first-child {
+    padding: 0;
+}
+/*
+.anmipes-single-gallery-thumb.active:last-child {
+    padding: 0;
+}*/
+
+.slider.product-sm-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
