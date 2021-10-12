@@ -85,18 +85,15 @@ a.product-popup {
     height: 100px;
 }
 
-.anmipes-single-gallery-thumb {
-    padding: 0 5px;
-    /*margin-left: 2px;*/
+.anmipes-thumb_imges .slick-track {
+    display: flex;
+    gap: 4px;
 }
 
-.anmipes-single-gallery-thumb.active:first-child {
-    padding: 0;
+.anmipes-single-gallery-thumb.slick-active:first-child{
+    
 }
-/*
-.anmipes-single-gallery-thumb.active:last-child {
-    padding: 0;
-}*/
+
 
 .slider.product-sm-thumb img {
     width: 100%;
