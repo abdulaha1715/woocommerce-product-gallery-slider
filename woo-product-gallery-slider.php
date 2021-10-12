@@ -61,7 +61,7 @@ add_action('init', 'abnipes_woo_register_script');
 function abnipes_woo_enqueue_style(){
     wp_enqueue_style('slick-theme-css');
     wp_enqueue_style('slick-min-css');
-    // wp_enqueue_style('font-awesome-css');
+    wp_enqueue_style('font-awesome-css');
     // wp_enqueue_style('bootstrap-css');
     wp_enqueue_style('fancybox-css');
     wp_enqueue_style('ab-woo-style-css');
