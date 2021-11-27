@@ -23,7 +23,7 @@
     transition: all .3s ease-in-out;
 }
 
-.anmipes-woocommerce-product-gallery:hover .video-icon a {
+.anmipes-single-gallery-img:hover .video-icon a {
     border-color: #fff;
     color: #fff;
 }
@@ -54,10 +54,10 @@ a.product-popup {
     height: 100%;
     opacity: 0;
     transition: 0.3s;
-    z-index: 99;
+    z-index: 9;
 }
 
-.anmipes-woocommerce-product-gallery .video-icon:hover a.product-popup, 
+
 .anmipes-single-gallery-img:hover a.product-popup {
     opacity: 1;
 }
@@ -101,5 +101,7 @@ a.product-popup {
     object-fit: cover;
 }
 
-
+.anmipes-single-gallery-thumb img {
+    cursor: pointer;
+}
 

@@ -188,6 +188,13 @@ function abnipes_woocommerce_show_product_images() {
             $image_ids = $product->get_gallery_image_ids();
             if (!empty($image_ids)) : ?>
 
+                <div class="anmipes-product-big-image">
+
+                    <?php foreach ($image_ids as $image_id) : ?>
+                        <div class="anmipes-single-gallery-img">
+
+
+
                 <?php if ( get_post_meta( get_the_ID(), 'product_video_id', true ) ) : ?>
                     <div class="video-icon">
                         <a class="video-link" data-fancybox="" href="https://www.youtube.com/embed/<?php echo get_post_meta( get_the_ID(), 'product_video_id', true ); ?>?autoplay=1">
@@ -195,11 +202,7 @@ function abnipes_woocommerce_show_product_images() {
                         </a>
                     </div>
                 <?php endif; ?>
-
-                <div class="anmipes-product-big-image">
-
-                    <?php foreach ($image_ids as $image_id) : ?>
-                        <div class="anmipes-single-gallery-img">
+                
                             <img src="<?php echo wp_get_attachment_image_url($image_id, 'large'); ?>" alt="">
                             <a data-fancybox="images" href="<?php echo wp_get_attachment_image_url($image_id, 'large'); ?>" class="product-popup">
                                 <div class="hover-icon"><i class="fa fa-plus"></i></div>
